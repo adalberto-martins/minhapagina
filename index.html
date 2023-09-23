@@ -3,34 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Socialb</title>
+    <title>Social</title>
+       <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        @font-face {
+            font-family: 'Android';
+            src: url('../fonte/idroid.otf') format('opentype');
+            font-weight: normal;
+}
+
+:root {
+    --cor0: #9EDBE6;
+    --cor1: #00B4D8;
+    --cor2: #0096C7;
+    --cor3: #0077B6;
+    --cor4: #023E8A;
+    --cor5: #03045E;
+
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+
+}
+
+body {
+
+    background-color: var(--cor0);
+
+}
+
+p {
+   font-size: 1.4em;
+   margin-left: 30px; 
+   text-indent: 50px;
+   
+}
+
+header {
+    background-color: var(--cor3);
+    color: white;
+    margin: 15px 15px 0px 15px;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+header h1 {
+    font-family: var(--fonte-android);
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.263);
+}
+
+header h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+main {
+    background-color: var(--cor1);
+    margin: 0px 15px 0px 15px;
+    padding: 5px;
+}
+    
+
+main img {
+    margin-left: 30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+main h2 {
+    text-indent: 20px;
+    
+}
+
+main ul {
+    list-style-type: '';
+    list-style-position: inside;
+}
+
+ul  img {
+
+    padding: 0px;
+}
+
+main  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor0);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+footer {
+    background-color: var(--cor5) ;
+    color: white;
+    margin: 0px 14px 10px 14px;
+    padding: 1px;
+    border-radius: 0px 0px 10px 10px;
+    }
+
+footer p {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-size: 1.2em;
+      
+}
+    </style>
 </head>
 <body>
-    <h1>Minhas redes sociais</h1>
-    <h2>Quem sou eu?</h2>
-    <img src="imagensb/foto-perfil-Adalberto.png" alt="perfil">
-    <P>Meu nome é <strong>Adalberto Martins</strong>, sou Estudante  de Tecnologia desde <br> 2020 e estou iniciando no ramo da  programação e desenvolvimentos <br> de sites/aplicações.</P> 
-    <h2>Como falar comigo?</h2>
+    <header>
+        <hgroup>
+        <h1>Minhas Redes Sociais</h1>
+        <h2>Quem sou eu?</h2>
+        </hgroup>
+    </header>
+    <main>
+        <article>
+        <img src="imagensb/foto-perfil-Adalberto.png" alt="perfil">
+        <P>Meu nome é <strong>Adalberto Martins</strong>, sou Estudante  de Tecnologia desde <br> 2020 e estou iniciando no ramo da  programação e desenvolvimentos <br> de sites/aplicações.</P> 
+        <h2>Como falar comigo?</h2>
+        <aside>
     <ul>
         <li>
-            <img src="imagensb/icone-youtube.png" alt="Link"> - Se inscreve lá no meu canal no You Tube
+            <img src="imagensb/icone-youtube.png" alt="Link"> <a href="#">- Se inscreve lá no meu canal no You Tube</a>
         </li>
         <li>
-            <img src="imagensb/icone-github.png" alt="link"><a href="https://github.com/adalberto-martins">adalberto-martins</a> Acessa meu Repositótio público no GitHub
+            <img src="imagensb/icone-github.png" alt="link"> - <a href="https://github.com/adalberto-martins">Acessa meu Repositótio público no GitHub</a>
         </li>
         <li>
-            <img src="imagensb/icone-instagram.png" alt="instagran"> - Me segue lá no Instagram
+            <img src="imagensb/icone-instagram.png" alt="instagran"> <a href="#">- Me segue lá no Instagram</a>
         </li>
         <li>
-            <img src="imagensb/icone-linkedin.png" alt="icone-linkedin"> - Me adiciona lá no Linkedin
+            <img src="imagensb/icone-linkedin.png" alt="icone-linkedin"> <a href="#">- Me adiciona lá no Linkedin</a>
         </li>
         <li>
-            <img src="imagensb/icone-twitter.png" alt="Twiter">- Me segue lá no twitter
+            <img src="imagensb/icone-twitter.png" alt="Twiter">- <a href="#">Me segue lá no twitter</a>
         </li>
         <li>
-            <img src="imagensb/icone-facebook.png" alt="facebook"> - Me acompanha lá no Facebook
+            <img src="imagensb/icone-facebook.png" alt="facebook"> <a href="#">- Me acompanha lá no Facebook</a>
         </li>
     </ul>
-    
+        </aside>
+</article>
+</main>
+<footer>
+    <p>Criado por <strong>Adalberto Martins</strong></p>
+
+</footer>    
 </body>
 </html>
